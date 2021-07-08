@@ -1,0 +1,63 @@
+
+<mat-card class="ccp-card" >
+    <mat-card-header class="header">
+      <mat-card-title>Informations personnelle</mat-card-title>
+      <mat-card-subtitle>Lachraf</mat-card-subtitle>
+    </mat-card-header>
+   
+    <mat-card-content>
+      
+      
+       <div style="padding:5%;box-shadow: 0 0 8px #006622;">
+         <div class="item">
+          <label>Nom</label>
+          <input  type="text"   
+                  value=""
+                  name="nom"
+                  id="nom"
+                  disabled
+                  required/>
+                 
+        </div> 
+        <div class="item">
+          <label>Prenom</label>
+          <input  type="text"   
+                  value=""
+                  name="prenom"
+                  id="prenom"
+                  disabled
+                  required/>
+                 
+        </div> 
+         <hr>
+         <div class="item">
+          <label>Email</label>
+          <input  type="email"   
+                  value=""
+                  name="email"
+                  id="email"
+                  disabled
+                  required/>
+                  
+        </div> 
+        <hr>
+        
+        <div class="item">
+          <label>Téléphone</label>
+          <input  type="text"   
+                  value=""
+                  name="telephone"
+                  required
+                  id="tel"
+                  disabled
+                  >
+                 
+        </div> 
+      </div>
+          
+    </mat-card-content>
+    <mat-card-actions >
+      <button class="modifier" mat-stroked-button (click)='modify()'>Modifier</button>
+
+       </mat-card-actions>
+  </mat-card>

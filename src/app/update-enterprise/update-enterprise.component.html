@@ -1,0 +1,80 @@
+<mat-card class="ccp-card" >
+    <mat-card-header class="header">
+      <mat-card-title>Informations personnelle</mat-card-title>
+      
+    </mat-card-header>
+   
+    <mat-card-content>
+      
+      
+       <div style="padding:5%; box-shadow: 0 0 8px #006622; ">    
+         <div class="item">
+          <label>Nom d'enterprise</label>
+          <input  type="text"   
+                  value=""
+                  name="nomE"
+                  id="nomEntere"
+                  disabled
+                  required style="width: 60%;"/>
+                 
+        </div> 
+         <hr>
+         <div class="item">
+          <label>Matricul fiscale</label>
+          <input  type="text"   
+                  value=""
+                  name="nom"
+                  id="fiscal"
+                  disabled
+                  required/>
+                 
+        </div> 
+        <hr>
+        
+        <div class="item">
+          <label>Article</label>
+          <input  type="text"   
+          disabled
+          id="article"
+                  value=""
+                  name="article"
+                  required
+                  >
+                  
+        </div> 
+         
+        <hr>
+        
+        <div class="item">
+          <label>Adresse</label>
+          <input  type="text"   
+          disabled        
+          value=""
+                  name="adr"
+                  id="adr"
+                  required
+                  >
+                 
+        </div> 
+         
+        <hr>
+        
+        <div class="item">
+          <label>Telephone</label>
+          <input  type="text"   
+                  value=""
+                  name="telephone"
+                  id="tel"
+                  disabled
+                  required
+                  >
+                 
+        </div> 
+      </div>
+        
+    </mat-card-content>
+    <mat-card-actions >
+      <button class="modifier" mat-stroked-button (click)='modify()'>Modifier</button>
+      
+       </mat-card-actions>
+  </mat-card>

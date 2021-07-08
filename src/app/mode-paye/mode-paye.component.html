@@ -1,0 +1,42 @@
+<mat-card class="ccp-card" >
+    
+    <mat-card-content>
+      <h2 style="text-align: center;">
+        Choisis votre mode paiement
+      </h2>
+    </mat-card-content>
+    <mat-card-header class="header">
+      
+       
+  <input type="submit"  value="" role="lien-cib"  class="sub-link" id="cib" onclick="
+    document.getElementById('cart1').style.display='none';
+    document.getElementById('cart3').style.display='none';
+    document.getElementById('cart2').style.display='block';
+    document.getElementById('cib').style.boxShadow='0 0 10px 0  #006622';
+    document.getElementById('dahabia').style.boxShadow='0 0 10px 0  #fff';
+    document.getElementById('vir').style.boxShadow='0 0 10px 0  #fff';
+    "
+    >
+        <input type="submit" id="dahabia" value="" role="lien-dahabia" class="sub-link" onclick="
+        document.getElementById('cart1').style.display='block';
+        document.getElementById('cart2').style.display='none';
+        document.getElementById('cart3').style.display='none';
+        document.getElementById('dahabia').style.boxShadow='0 0 10px 0  #006622';
+        document.getElementById('cib').style.boxShadow='0 0 10px 0  #fff';
+        document.getElementById('vir').style.boxShadow='0 0 10px 0  #fff';
+        ">
+        <input type="submit" id="vir" value="" role="lien-virement" class="sub-link" 
+        onclick="
+        document.getElementById('cart1').style.display='none';
+        document.getElementById('cart2').style.display='none';
+        document.getElementById('cart3').style.display='block';
+        document.getElementById('vir').style.boxShadow='0 0 10px 0  #006622';
+        document.getElementById('cib').style.boxShadow='0 0 10px 0  #fff';
+        document.getElementById('dahabia').style.boxShadow='0 0 10px 0  #fff';
+        "
+        >
+  
+    </mat-card-header>
+     
+     
+</mat-card>

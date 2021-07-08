@@ -1,0 +1,141 @@
+<mat-card class="ccp-card">
+    <mat-card-header class="header">
+      <div mat-card-avatar class="cib-header-image"></div>
+      <mat-card-title>Informations de la carte</mat-card-title>
+      <mat-card-subtitle>Carte crédit bancaire</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      
+      <h2 style="padding-left: 2%;">
+        Veuillez saisir les informations de votre paiement
+      </h2>
+      <hr>
+     
+       <div >   
+        <div class="item">
+          <label >Nom de la banque:<span>*</span></label>
+            <select name="banque" class="form_input">
+                <option value="01">&nbsp;&nbsp;la Banque extérieure d’Algérie (BEA)</option>
+                <option value="02">&nbsp;&nbsp;Banque nationale d’Algérie (BNA)</option>
+                <option value="03">&nbsp;&nbsp;Crédit populaire d’Algérie (CPA)</option>
+                <option value="04">&nbsp;&nbsp;Banque de développement local(BDL)</option>
+                <option value="05">&nbsp;&nbsp;Banque de l'agriculture et du développement rural (BADR)</option>
+                <option value="06">&nbsp;&nbsp;Caisse nationale d'épargne et de prévoyance (CNEP Banque)</option>
+                <option value="07">&nbsp;&nbsp;Banque Al Baraka d’Algérie</option>
+                <option value="08">&nbsp;&nbsp;Citibank N.A Algeria </option>
+                <option value="09">&nbsp;&nbsp;Arab Banking Corporation-Algeria</option>
+                <option value="09">&nbsp;&nbsp;Natixis-Algérie</option>
+                <option value="09">&nbsp;&nbsp;Société Générale-Algérie</option>
+                <option value="09">&nbsp;&nbsp;Arab Bank Plc-Algeria </option>
+                <option value="09">&nbsp;&nbsp;BNP Paribas Al-Djazair</option>
+                <option value="09">&nbsp;&nbsp;Trust Bank-Algeria</option>
+                <option value="09">&nbsp;&nbsp;The Housing bank for trade and finance-Algeria</option>
+                <option value="09">&nbsp;&nbsp;Gulf Bank Algérie</option>
+                <option value="09">&nbsp;&nbsp;Fransabank Al-Djazair</option>
+                <option value="09">&nbsp;&nbsp;Crédit agricole corporate et investment Bank-Algérie</option>
+                <option value="09">&nbsp;&nbsp;HSBC-Algeria</option>
+                <option value="09">&nbsp;&nbsp;Al Salam Bank-Algeria</option>
+            </select>
+        </div>
+        <hr> 
+         <div class="item">
+          <label>Numero de la carte<span>*</span></label>
+          <input  type="text"   
+                  name="Numero de la carte"
+                  maxlength="19"
+                  (keypress)="OnlyNumberAllow($event)" required/>
+        </div> 
+         <hr>
+         <div class="item">
+            <label>Date d'expiration:<span>*</span></label>
+            <br>
+            <br>
+           <div >
+            <label >Mois:</label>
+            <select name="MM" id="month" class="form_input">
+                <option value="01">&nbsp;&nbsp;1 - Janvier</option>
+                <option value="02">&nbsp;&nbsp;2 - Fevrier</option>
+                <option value="03">&nbsp;&nbsp;3 - Mars</option>
+                <option value="04">&nbsp;&nbsp;4 - Avril</option>
+                <option value="05">&nbsp;&nbsp;5 - Mai</option>
+                <option value="06">&nbsp;&nbsp;6 - Juin</option>
+                <option value="07">&nbsp;&nbsp;7 - Juillet</option>
+                <option value="08">&nbsp;&nbsp;8 - Aout</option>
+                <option value="09">&nbsp;&nbsp;9 - Septembre</option>
+                <option value="10">10 - Octobre</option>
+                <option value="11">11 - Novembre</option>
+                <option value="12" selected="">12 - Decembre</option>
+            </select>
+               <label>Année:</label>
+               <select name="YYYY" id="year" class="form_input">
+                   <option value="2021">2021</option>
+                   <option value="2022">2022</option>
+                   <option value="2023">2023</option>
+                   <option value="2024">2024</option>
+                   <option value="2025">2025</option>
+                   <option value="2026">2026</option>
+                   <option value="2027">2027</option>
+                   <option value="2028">2028</option>
+                   <option value="2029">2029</option>
+                   <option value="2030">2030</option>
+                   <option value="2031">2031</option>
+                   <option value="2032">2032</option>
+                   <option value="2033">2033</option>
+                   <option value="2034">2034</option>
+                   <option value="2035">2035</option>
+                   <option value="2036">2036</option>
+                   <option value="2037">2037</option>
+                   <option value="2038">2038</option>
+                   <option value="2039">2039</option>
+                   <option value="2040">2040</option>
+                   <option value="2041">2041</option>
+                   <option value="2042">2042</option>
+                   <option value="2043">2043</option>
+                   <option value="2044">2044</option>
+                   <option value="2045">2045</option>
+                   <option value="2046">2046</option>
+                   <option value="2047">2047</option>
+                   <option value="2048">2048</option>
+                   <option value="2049">2049</option>
+                   <option value="2050">2050</option>
+                   <option value="2051">2051</option>
+                   <option value="2052">2052</option>
+                   <option value="2053">2053</option>
+                   <option value="2054">2054</option>
+                   <option value="2055">2055</option>
+                   <option value="2056">2056</option>
+                   <option value="2057">2057</option>
+                   <option value="2058">2058</option>
+                   <option value="2059">2059</option>
+                   <option value="2060">2060</option>
+                </select>
+           </div>
+        </div>
+        <hr>
+        <div class="item">
+            
+                <label>Enterz le Code CVC2/CVV2:<span>*</span></label>
+                <span style="font-size: .70em; font-style: italic;">(Situé au dos de la carte)
+                </span>
+        <div class="item">
+      
+                <input style="width: 20%;"
+                 name="$CVv" maxlength="3" id="iCVC" type="password" autocomplete="off"
+                 (keypress)="OnlyNumberAllow($event)" >
+                 
+  
+                </div> 
+        </div>
+        <hr>
+        <div class="item">
+                <label>Nom et prénom<span>*</span></label>
+                <div>
+                <input 
+                 type="text" autocomplete="true">
+                </div> 
+        </div>
+      </div>
+         
+    </mat-card-content>
+  
+  </mat-card>

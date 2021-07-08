@@ -1,0 +1,108 @@
+<mat-card class="ccp-card" >
+    <mat-card-header class="header">
+      <div mat-card-avatar class="vir-header-image"></div>
+      <mat-card-title>Virement bancaire</mat-card-title>
+      <mat-card-subtitle>Compte à Compte</mat-card-subtitle>
+    </mat-card-header>
+   
+    <mat-card-content>
+      
+      <h2>
+        Nom de vendeur:
+        {{nom_vendaur}}
+      </h2>
+      <hr>
+     
+       <div style="padding:5%;">    
+         <div class="item">
+          <label>Numero de la carte<span>*</span></label>
+          <input  type="text"   
+                  placeholder="Numero la carte"
+                  name="Numero de la carte"
+                  maxlength="19"
+                  (keypress)="OnlyNumberAllow($event)" required/>
+                  
+        </div> 
+        <div class="item">
+          <label>Adresse<span>*</span></label>
+          <input  type="text"   
+                  placeholder="Adresse de la banque"
+                   required/>
+                  
+        </div> 
+         <hr>
+         
+         <div class="item">
+            <label>Reçu de Virement:<span>*</span>
+            <br>
+            <div class="container">
+              <input type="file" class="upload-box" />
+           </div>
+          </label>
+        </div>
+        
+        <hr>
+        <div>
+          <h2>les informations de votre livraison (Livraison {{option}})</h2>
+          <div *ngIf="option=='domicile'" style="padding-left:10% ;">
+            <h3><li>Wilaya:  </li></h3>
+            <h3><li>Commune: </li></h3>
+            <h3><li>Code postal:  </li></h3>
+            <h3><li>Numero et rue:  </li></h3>
+            <h3><li>Téléphone:  </li></h3>
+            <h3><li>Email:</li></h3>
+            <h3><li>Link GPS:  <a href="{{nom_vendaur}}">{{nom_vendaur}}</a></li></h3>
+          </div>
+                
+        
+        </div>
+        <div>
+          
+          
+          <div *ngIf="option=='point_livraison'" style="padding-left:10% ;">
+            <h3><li>Point de livraison:</li></h3>
+            <h3><li>Téléphone:</li> </h3>
+            <h3><li>Email:</li></h3>
+            <h3><li>Link GPS:  <a href=""></a></li></h3>
+          </div>
+  
+          <div *ngIf="option=='point'" style="padding-left:10% ;">
+            <h3><li>Point de livraison: </li></h3>
+            <h3><li>Téléphone:</li></h3>
+            <h3><li>Email:</li></h3>
+            <h3><li>Link GPS:  <a href=""></a></li></h3>
+            <h3><li>Délait de livraison:</li></h3>
+            <h3><li>Frais de transport:</li></h3>
+          </div>
+        
+        </div>
+        <hr>
+        <div class="form-group row mb-2">
+          <h2>Votre commande</h2>
+          <div style="padding-left:10% ;">
+  
+            <h3><li>N° Commande: </li></h3>
+            <table id="article">
+              <tr>
+                <th>#</th>
+                <th>Article</th>
+                <th>Quantité</th>
+                <th>Prix unitaire</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+            <label style="padding-left: 50%;">Prix total:</label>
+            <br>
+            <label style="padding-left: 50%;">Prix(avec TVA):</label>
+            </div>   
+        </div>
+      </div>
+   
+    </mat-card-content>
+    
+  </mat-card>

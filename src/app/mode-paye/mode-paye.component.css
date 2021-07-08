@@ -1,0 +1,49 @@
+           input{
+           position: relative;
+            
+           }
+           .ccp-card {
+                display: block;
+                align-self: center;
+                max-width: 70%;
+               margin: auto;
+              }
+ 
+ 
+   .sub-link:first-child {
+    margin-left: 0;
+    
+    
+}
+ #dahabia {
+    background: #fff url(/assets/icone-dahabia.png) center center no-repeat; 
+}
+   .sub-link[role="lien-cib"] {
+    background: #fff url(/assets/cib.png) center center no-repeat;
+}
+ .sub-link[role="lien-virement"] {
+    background: #fff url(/assets/icon-virement.png) center center no-repeat;
+}
+.sub-link {
+    
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: 84px;
+    border-radius: 6px;
+    border: none;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+ .header{
+     padding-left: 10%;
+     background-color:ghostwhite;
+     
+     
+ } 
+ h2{
+    padding-top: 5%;
+    font-weight: lighter;
+}
