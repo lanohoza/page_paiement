@@ -3,11 +3,12 @@
             
            }
            .ccp-card {
-                display: block;
-                align-self: center;
-                max-width: 70%;
-               margin: auto;
-              }
+            display: block;
+            align-self: center;
+            max-width: 80%;
+            position: relative;
+           margin: auto;
+          }
  
  
    .sub-link:first-child {
@@ -17,12 +18,16 @@
 }
  #dahabia {
     background: #fff url(/assets/icone-dahabia.png) center center no-repeat; 
+    background-size: contain;
 }
    .sub-link[role="lien-cib"] {
     background: #fff url(/assets/cib.png) center center no-repeat;
+    background-size: contain;
+    
 }
  .sub-link[role="lien-virement"] {
     background: #fff url(/assets/icon-virement.png) center center no-repeat;
+    background-size: contain;
 }
 .sub-link {
     
@@ -36,9 +41,10 @@
     cursor: pointer;
     transition: all 0.2s ease;
     position: relative;
+    
 }
  .header{
-     padding-left: 10%;
+     align-self:center;
      background-color:ghostwhite;
      
      

@@ -9,7 +9,8 @@ import { Component} from '@angular/core';
 })
 export class AppComponent{
 title = 'app';
- typeAchteur='personne';
+//typeAchteur='personne';
+ typeAchteur='enterprise';
  transaction:boolean;
  payer(){
  this.transaction=false;

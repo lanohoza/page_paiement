@@ -20,13 +20,14 @@
                   placeholder="Numero la carte"
                   name="Numero de la carte"
                   maxlength="19"
-                  (keypress)="OnlyNumberAllow($event)" required/>
+                  (keypress)="OnlyNumberAllow($event)" style="width: 40%;" required/>
                   
         </div> 
         <div class="item">
           <label>Adresse<span>*</span></label>
           <input  type="text"   
                   placeholder="Adresse de la banque"
+                  style="width: 50%;"
                    required/>
                   
         </div> 
@@ -77,9 +78,9 @@
         
         </div>
         <hr>
-        <div class="form-group row mb-2">
+        <div >
           <h2>Votre commande</h2>
-          <div style="padding-left:10% ;">
+          <div >
   
             <h3><li>N° Commande: </li></h3>
             <table id="article">

@@ -43,7 +43,7 @@
           <input  type="text"   
                   name="Numero de la carte"
                   maxlength="19"
-                  (keypress)="OnlyNumberAllow($event)" required/>
+                  (keypress)="OnlyNumberAllow($event)" style="width: 40%;" required/>
         </div> 
          <hr>
          <div class="item">
@@ -52,7 +52,7 @@
             <br>
            <div >
             <label >Mois:</label>
-            <select name="MM" id="month" class="form_input">
+            <select name="MM" id="month" class="form_input" >
                 <option value="01">&nbsp;&nbsp;1 - Janvier</option>
                 <option value="02">&nbsp;&nbsp;2 - Fevrier</option>
                 <option value="03">&nbsp;&nbsp;3 - Mars</option>
@@ -66,7 +66,7 @@
                 <option value="11">11 - Novembre</option>
                 <option value="12" selected="">12 - Decembre</option>
             </select>
-               <label>Année:</label>
+               <label style="margin-left: 5%;">Année:</label>
                <select name="YYYY" id="year" class="form_input">
                    <option value="2021">2021</option>
                    <option value="2022">2022</option>
@@ -119,7 +119,7 @@
                 </span>
         <div class="item">
       
-                <input style="width: 20%;"
+                <input style="width: 10%;"
                  name="$CVv" maxlength="3" id="iCVC" type="password" autocomplete="off"
                  (keypress)="OnlyNumberAllow($event)" >
                  
@@ -131,7 +131,7 @@
                 <label>Nom et prénom<span>*</span></label>
                 <div>
                 <input 
-                 type="text" autocomplete="true">
+                 type="text" autocomplete="true" style="width: 50%;">
                 </div> 
         </div>
       </div>
