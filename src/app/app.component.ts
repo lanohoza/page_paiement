@@ -16,6 +16,7 @@ title = 'app';
  this.transaction=false;
  if(this.transaction){
    document.getElementById('paye').style.background="#838aad";
+   document.getElementById('paye').style.border="#838aad";
  }
  }
 }
