@@ -21,8 +21,12 @@
     
 }
 
-
-
+mat-card-subtitle{
+    font-size: large;
+}
+mat-card-title{
+    font-size: x-large;
+} 
 
 .cardbox{
     margin-bottom: 3%;
@@ -33,23 +37,26 @@
     display: none;
 }
 label{
-    padding-right: 10px;}
+   
+width: 180px;
+display: inline-block;
+}
 input{
      background: #FFFFFF;
     border: 1px solid #ccc;
       box-sizing: border-box;
       border-radius: 5px;
-      width: 50;
-      height: 30px;
+      
+      height: 35px;
     position: relative;}
 input, select, label {
     
-    position: relative; 
-    width: auto;
+    
     margin: 0;
     outline: none;
     font-family: Roboto, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 400;
     color: #666;
     line-height: 22px;
     }
@@ -62,7 +69,7 @@ top: 105px;
 font-family: IBM Plex Sans;
 font-style: normal;
 font-weight: normal;
-font-size: 15px;
+font-size: 20px;
 line-height: 24px;
 /* or 343% */
 
@@ -198,13 +205,18 @@ form {
               }
   
  .header{
+     font-size: 100% ;
      padding: 8px;
      background-color:ghostwhite;
      
  } 
  h2{
+     font-size: x-large;
     padding-top: 5%;
     font-weight: lighter;
+}
+h3{
+    font-size: large;
 }
   .ccp-header-image {
     background-image: url("/assets/ccp.png");
@@ -226,14 +238,14 @@ form {
     transform: translate(-50%,-50%);
     margin-top: 3%;
     position: relative;
-    padding-top: 10%;
+   
 }
 .upload-box{
     font-size: 16px;
     background: white;
     border-radius: 70px;
     box-shadow: 5px 5px 10px black;
-    width: 100%;
+    width: 400px;
     height: 40px;
     outline: none;
     left: 60%;
@@ -250,26 +262,3 @@ form {
 ::-webkit-file-upload-button:hover{
     background: #ccc;
 }
-
-#article {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  #article td, #article th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  #article tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #article tr:hover {background-color: #ddd;}
-  
-  #article th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #04AA6D;
-    color: white;
-  }
