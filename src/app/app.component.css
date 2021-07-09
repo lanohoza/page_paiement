@@ -1,7 +1,7 @@
 .bg-img{
     background-image: url('/assets/background.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 75% 100%;
     background-attachment: fixed;
     background-position: right;
     
