@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['../app.component.css']
 })
 export class FvirementComponent implements OnInit {
-  option='domicile';
+    //option='Laivraison à domicile';
+ //option='Point de livraison';
+  option='Point de livraison chez le vendeur';
   
 
 
