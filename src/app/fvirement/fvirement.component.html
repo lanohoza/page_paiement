@@ -42,8 +42,8 @@
         
         <hr>
         <div>
-          <h2>les informations de votre livraison (Livraison {{option}})</h2>
-          <div *ngIf="option=='domicile'" style="padding-left:10%;">
+          <h2>les informations de votre livraison ({{option}})</h2>
+          <div *ngIf="option=='Laivraison à domicile'" style="padding-left:10%;">
             <h3><li>Wilaya:  </li></h3>
             <h3><li>Commune: </li></h3>
             <h3><li>Code postal:  </li></h3>
@@ -58,14 +58,14 @@
         <div>
           
           
-          <div *ngIf="option=='point_livraison'" style="padding-left:10% ;">
+          <div *ngIf="option=='Point de livraison'" style="padding-left:10% ;">
             <h3><li>Point de livraison:</li></h3>
             <h3><li>Téléphone:</li> </h3>
             <h3><li>Email:</li></h3>
             <h3><li>Link GPS:  <a href=""></a></li></h3>
           </div>
   
-          <div *ngIf="option=='point'" style="padding-left:10% ;">
+          <div *ngIf="option=='Point de livraison chez le vendeur'" style="padding-left:10% ;">
             <h3><li>Point de livraison: </li></h3>
             <h3><li>Téléphone:</li></h3>
             <h3><li>Email:</li></h3>
