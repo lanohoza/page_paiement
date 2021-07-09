@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FvirementComponent implements OnInit {
   option='domicile';
   
-nom_vendaur='Alibaba';
+
 
 
   OnlyNumberAllow(event:any):boolean{
