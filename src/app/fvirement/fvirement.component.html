@@ -1,15 +1,15 @@
 <mat-card class="ccp-card" >
     <mat-card-header class="header">
       <div mat-card-avatar class="vir-header-image"></div>
-      <mat-card-title>Virement bancaire</mat-card-title>
-      <mat-card-subtitle>Compte à Compte</mat-card-subtitle>
+      <mat-card-title >Virement bancaire</mat-card-title>
+      <mat-card-subtitle >Compte à Compte</mat-card-subtitle>
     </mat-card-header>
    
     <mat-card-content>
       
       <h2>
         Nom de vendeur:
-        {{nom_vendaur}}
+        
       </h2>
       <hr>
      
@@ -17,16 +17,14 @@
          <div class="item">
           <label>Numero de la carte<span>*</span></label>
           <input  type="text"   
-                  placeholder="Numero la carte"
                   name="Numero de la carte"
                   maxlength="19"
-                  (keypress)="OnlyNumberAllow($event)" style="width: 40%;" required/>
+                  (keypress)="OnlyNumberAllow($event)" style="width: 50%;" required/>
                   
         </div> 
         <div class="item">
           <label>Adresse<span>*</span></label>
           <input  type="text"   
-                  placeholder="Adresse de la banque"
                   style="width: 50%;"
                    required/>
                   
@@ -34,10 +32,10 @@
          <hr>
          
          <div class="item">
-            <label>Reçu de Virement:<span>*</span>
-            <br>
+            <label style="display: inline;">Reçu de Virement:<span>*</span>
+            
             <div class="container">
-              <input type="file" class="upload-box" />
+              <input type="file" class="upload-box"/>
            </div>
           </label>
         </div>
@@ -45,14 +43,14 @@
         <hr>
         <div>
           <h2>les informations de votre livraison (Livraison {{option}})</h2>
-          <div *ngIf="option=='domicile'" style="padding-left:10% ;">
+          <div *ngIf="option=='domicile'" style="padding-left:10%;">
             <h3><li>Wilaya:  </li></h3>
             <h3><li>Commune: </li></h3>
             <h3><li>Code postal:  </li></h3>
             <h3><li>Numero et rue:  </li></h3>
             <h3><li>Téléphone:  </li></h3>
             <h3><li>Email:</li></h3>
-            <h3><li>Link GPS:  <a href="{{nom_vendaur}}">{{nom_vendaur}}</a></li></h3>
+            <h3><li>Link GPS:  <a href=""></a></li></h3>
           </div>
                 
         
@@ -80,36 +78,22 @@
         <hr>
         <div >
           <h2>Votre commande</h2>
-          <div >
+          <div style="padding-left: 10% ;">
   
             <h3><li>N° Commande: </li></h3>
-            <table id="article">
-             <tr>
-                <th>#</th>
-                <th>Ref</th>
-                <th>Quantité</th>
-                <th>Unité</th>
-                <th>Description</th>
-                <th>Prix unitaire HT</th>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </table>
-            <label style="padding-left: 50%;">Prix total:</label>
+            <label><li>Prix total:</li></label>
             <br>
-            <label style="padding-left: 50%;">Prix(avec TVA):</label>
             <br>
-            <label style="padding-left: 50%;">Prix total TTC:</label>
-            </div>   
+          <label><li>Prix(avec TVA):</li></label>
+            <br>
+            <br>
+          <label><li>Prix total TTC:</li></label>
+              
+          </div>   
         </div>
       </div>
    
     </mat-card-content>
     
   </mat-card>
+
