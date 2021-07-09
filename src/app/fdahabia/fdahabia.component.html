@@ -16,18 +16,17 @@
          <div class="item">
           <label>Numero de la carte<span>*</span></label>
           <input  type="text"   
-                  placeholder="Numero la carte"
                   name="Numero de la carte"
                   maxlength="19"
-                  (keypress)="OnlyNumberAllow($event)" style="width: 40%;" required/>
+                  (keypress)="OnlyNumberAllow($event)" style="width: 50%;" required/>
         </div> 
          <hr>
          <div class="item">
-            <label>Date d'expiration:<span>*</span></label>
+            <label style="display: inline;">Date d'expiration:<span>*</span></label>
             <br>
             <br>
            <div >
-            <label >Mois:</label>
+            <label style="width: 70px;">Mois:</label>
             <select name="MM" id="month" class="form_input">
                 <option value="01">&nbsp;&nbsp;1 - Janvier</option>
                 <option value="02">&nbsp;&nbsp;2 - Fevrier</option>
@@ -42,7 +41,7 @@
                 <option value="11">11 - Novembre</option>
                 <option value="12" selected="">12 - Decembre</option>
             </select>
-               <label style="margin-left: 5%;">Année:</label>
+               <label style="width: 155px; padding-left: 70px;">Année:</label>
                <select name="YYYY" id="year" class="form_input">
                    <option value="2021">2021</option>
                    <option value="2022">2022</option>
@@ -90,23 +89,23 @@
         <hr>
         <div class="item">
             
-                <label>Enterz le Code CVC2/CVV2:<span>*</span></label>
-                <span style="font-size: .70em; font-style: italic;">(Situé au dos de la carte)
+                <label style="display: inline;">Enterz le Code CVC2/CVV2:<span>*</span></label>
+                <span style="font-size: .70em; font-style: italic;" style="padding-left:5px ;">(Situé au dos de la carte)
                 </span>
-        <div>
+        
       
                 <input style="width: 10%;"
                  name="$CVv" maxlength="3" id="iCVC" type="password" autocomplete="off"
                  (keypress)="OnlyNumberAllow($event)" >
-                 
-  
-                </div> 
+               
+                
         </div>
         <hr>
         <div class="item">
-                <label>Nom et prénom<span>*</span></label>
+                
                 <div>
-                <input 
+                  <label>Nom et prénom<span>*</span></label>
+                  <input 
                  type="text" autocomplete="true" style="width: 50%;">
                 </div> 
         </div>
