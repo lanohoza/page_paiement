@@ -15,26 +15,27 @@
         <div class="item">
           <label >Nom de la banque:<span>*</span></label>
             <select name="banque" class="form_input">
-                <option value="01">&nbsp;&nbsp;la Banque extérieure d’Algérie (BEA)</option>
-                <option value="02">&nbsp;&nbsp;Banque nationale d’Algérie (BNA)</option>
-                <option value="03">&nbsp;&nbsp;Crédit populaire d’Algérie (CPA)</option>
-                <option value="04">&nbsp;&nbsp;Banque de développement local(BDL)</option>
-                <option value="05">&nbsp;&nbsp;Banque de l'agriculture et du développement rural (BADR)</option>
-                <option value="06">&nbsp;&nbsp;Caisse nationale d'épargne et de prévoyance (CNEP Banque)</option>
-                <option value="07">&nbsp;&nbsp;Banque Al Baraka d’Algérie</option>
-                <option value="08">&nbsp;&nbsp;Citibank N.A Algeria </option>
-                <option value="09">&nbsp;&nbsp;Arab Banking Corporation-Algeria</option>
-                <option value="09">&nbsp;&nbsp;Natixis-Algérie</option>
-                <option value="09">&nbsp;&nbsp;Société Générale-Algérie</option>
-                <option value="09">&nbsp;&nbsp;Arab Bank Plc-Algeria </option>
-                <option value="09">&nbsp;&nbsp;BNP Paribas Al-Djazair</option>
-                <option value="09">&nbsp;&nbsp;Trust Bank-Algeria</option>
-                <option value="09">&nbsp;&nbsp;The Housing bank for trade and finance-Algeria</option>
-                <option value="09">&nbsp;&nbsp;Gulf Bank Algérie</option>
-                <option value="09">&nbsp;&nbsp;Fransabank Al-Djazair</option>
-                <option value="09">&nbsp;&nbsp;Crédit agricole corporate et investment Bank-Algérie</option>
-                <option value="09">&nbsp;&nbsp;HSBC-Algeria</option>
-                <option value="09">&nbsp;&nbsp;Al Salam Bank-Algeria</option>
+                <option value="b1">&nbsp;&nbsp;Séléctionner une banque</option>
+                <option value="b2">&nbsp;&nbsp;la Banque extérieure d’Algérie (BEA)</option>
+                <option value="b3">&nbsp;&nbsp;Banque nationale d’Algérie (BNA)</option>
+                <option value="b4">&nbsp;&nbsp;Crédit populaire d’Algérie (CPA)</option>
+                <option value="b5">&nbsp;&nbsp;Banque de développement local(BDL)</option>
+                <option value="b6">&nbsp;&nbsp;Banque de l'agriculture et du développement rural (BADR)</option>
+                <option value="b7">&nbsp;&nbsp;Caisse nationale d'épargne et de prévoyance (CNEP Banque)</option>
+                <option value="b8">&nbsp;&nbsp;Banque Al Baraka d’Algérie</option>
+                <option value="b9">&nbsp;&nbsp;Citibank N.A Algeria </option>
+                <option value="b10">&nbsp;&nbsp;Arab Banking Corporation-Algeria</option>
+                <option value="b11">&nbsp;&nbsp;Natixis-Algérie</option>
+                <option value="b12">&nbsp;&nbsp;Société Générale-Algérie</option>
+                <option value="b13">&nbsp;&nbsp;Arab Bank Plc-Algeria </option>
+                <option value="b14">&nbsp;&nbsp;BNP Paribas Al-Djazair</option>
+                <option value="b15">&nbsp;&nbsp;Trust Bank-Algeria</option>
+                <option value="b16">&nbsp;&nbsp;The Housing bank for trade and finance-Algeria</option>
+                <option value="b17">&nbsp;&nbsp;Gulf Bank Algérie</option>
+                <option value="b18">&nbsp;&nbsp;Fransabank Al-Djazair</option>
+                <option value="b19">&nbsp;&nbsp;Crédit agricole corporate et investment Bank-Algérie</option>
+                <option value="b20">&nbsp;&nbsp;HSBC-Algeria</option>
+                <option value="b21">&nbsp;&nbsp;Al Salam Bank-Algeria</option>
             </select>
         </div>
         <hr> 
@@ -43,7 +44,7 @@
           <input  type="text"   
                   name="Numero de la carte"
                   maxlength="19"
-                  (keypress)="OnlyNumberAllow($event)" style="width: 40%;" required/>
+                  (keypress)="OnlyNumberAllow($event)" style="width: 50%;" required/>
         </div> 
          <hr>
          <div class="item">
@@ -51,7 +52,7 @@
             <br>
             <br>
            <div >
-            <label >Mois:</label>
+            <label style="width: 70px;">Mois:</label>
             <select name="MM" id="month" class="form_input" >
                 <option value="01">&nbsp;&nbsp;1 - Janvier</option>
                 <option value="02">&nbsp;&nbsp;2 - Fevrier</option>
@@ -66,7 +67,7 @@
                 <option value="11">11 - Novembre</option>
                 <option value="12" selected="">12 - Decembre</option>
             </select>
-               <label style="margin-left: 5%;">Année:</label>
+            <label style="width: 155px; padding-left: 70px;">Année:</label>
                <select name="YYYY" id="year" class="form_input">
                    <option value="2021">2021</option>
                    <option value="2022">2022</option>
@@ -114,26 +115,26 @@
         <hr>
         <div class="item">
             
-                <label>Enterz le Code CVC2/CVV2:<span>*</span></label>
-                <span style="font-size: .70em; font-style: italic;">(Situé au dos de la carte)
-                </span>
-        <div class="item">
-      
-                <input style="width: 10%;"
-                 name="$CVv" maxlength="3" id="iCVC" type="password" autocomplete="off"
-                 (keypress)="OnlyNumberAllow($event)" >
-                 
+          <label style="display: inline;">Enterz le Code CVC2/CVV2:<span>*</span></label>
+          <span style="font-size: .70em; font-style: italic;" style="padding-left:5px ;">(Situé au dos de la carte)
+          </span>
   
-                </div> 
-        </div>
+
+          <input style="width: 10%;"
+           name="$CVv" maxlength="3" id="iCVC" type="password" autocomplete="off"
+           (keypress)="OnlyNumberAllow($event)" >
+         
+          
+  </div>
         <hr>
         <div class="item">
-                <label>Nom et prénom<span>*</span></label>
-                <div>
-                <input 
-                 type="text" autocomplete="true" style="width: 50%;">
-                </div> 
-        </div>
+                
+          <div>
+            <label>Nom et prénom<span>*</span></label>
+            <input 
+           type="text" autocomplete="true" style="width: 50%;">
+          </div> 
+  </div>
       </div>
          
     </mat-card-content>
